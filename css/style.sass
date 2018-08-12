@@ -1,0 +1,160 @@
+// Root Styles
+*
+  box-sizing: border-box
+
+body
+  background-color: #e2e2e2
+  max-width: 1200px
+  margin: 8px auto
+  padding-bottom: 2000px
+
+h1
+  margin: 0
+  font-family: 'Montserrat', sans-serif
+  font-size: 40px
+
+h2
+  margin: 0
+  font-family: 'Yanone Kaffeesatz', sans-serif
+  letter-spacing: 1.8px
+  font-size: 25px
+  text-transform: uppercase
+
+h3
+  margin: 0
+  font-family: 'Montserrat', sans-serif
+  font-size: 20px
+  text-transform: uppercase
+
+p
+  margin: 0
+  font-family: 'Yanone Kaffeesatz', sans-serif
+  font-size: 20px
+
+a
+  margin: 0
+  font-family: 'Yanone Kaffeesatz', sans-serif
+  text-decoration: none
+  color: inherit
+
+.button
+  text-transform: uppercase
+  margin: 5px
+  padding: 10px 15px 7px
+  border: 1.5px solid
+  transition: .25s ease-in-out
+
+  &:hover
+    background-color: rgba(255,255,255, 0.25)
+
+section
+  border: 1px solid #b8b8b8
+  box-shadow: 0px 0px 10px grey
+  margin-top: 8px
+  padding: 8px
+  background-color: #fff
+
+// Header
+
+header
+  background-color: #fff
+  border: 1px solid #b8b8b8
+  box-shadow: 0px 0px 10px grey
+
+.top-nav
+  padding: 10px 0
+
+  h1
+    text-transform: uppercase
+    text-align: center
+    letter-spacing: 5px
+
+// Top Navigation
+
+.hero-grid-container
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  background-color: #fff
+
+.hero-grid-item
+  color: white
+  min-height: 265px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin: 0 4px
+  transition: .4s ease-in-out
+
+  &:nth-child(1)
+    background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url(../media/guitar.jpg) center
+    &:hover
+      background: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0, 0.25)), url(../media/guitar.jpg) center
+
+  &:nth-child(2)
+    background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url(../media/piano.jpg) center
+    &:hover
+      background: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0, 0.25)), url(../media/piano.jpg) center
+
+  &:nth-child(3)
+    background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url(../media/record.jpg) center
+    &:hover
+      background: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0, 0.25)), url(../media/record.jpg) center
+
+  &:nth-child(4)
+    background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url(../media/turntable.jpg) center
+    &:hover
+      background: linear-gradient(rgba(0,0,0, 0.25),rgba(0,0,0, 0.25)), url(../media/turntable.jpg) center
+
+// About Me section
+
+#bio
+  .content-container
+    display: flex
+    align-items: center
+
+
+.bio-content
+  display: inline-block
+  text-align: center
+  width: 59%
+  padding: 0 40px
+
+.bio-image
+  display: inline-block
+  position: relative
+  height: 400px
+  width: 40%
+  background-image: url("../media/bio-image.jpg")
+  background-position: center
+
+  &::after
+    content: " "
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 30px 0 30px 40px
+    border-color: transparent transparent transparent #fff
+
+// Recent Makes
+
+#recent-makes
+
+  h2
+    text-align: center
+
+  .content-container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+
+.audio-player
+  height: 200px
+  border: 2px solid red
+  margin: 2px
+
+audio
+  width: 95%
